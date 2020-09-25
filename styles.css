@@ -152,3 +152,9 @@ header {
   align-items: center;
   text-align: center;
 }
+
+.sub-headline {
+  font-size: 8.5rem;
+  font-family: var(--secondary-font);
+  color: var(--secondary-font-color);
+}
