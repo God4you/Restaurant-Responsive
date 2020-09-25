@@ -124,3 +124,31 @@ header {
   opacity: 1;
   transform: scale(1);
 }
+
+.nav-item {
+  border-bottom: 2px solid rgba(255, 255, 255.3);
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--secondary-font-color);
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/bg4.jpg");
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+}

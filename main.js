@@ -4,8 +4,8 @@ const selectElement = function (element) {
 };
 
 //selecting the class that we want to select with the funcation we created and storred in variables.
-const menuToggler = selectElement(".menu-toggle");
-const body = selectElement("body");
+let menuToggler = selectElement(".menu-toggle");
+let body = selectElement("body");
 
 menuToggler.addEventlistener("click", function () {
   body.classList.toggle("open");
