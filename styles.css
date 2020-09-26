@@ -229,6 +229,9 @@ header {
   font-size: 1.2rem;
   color: var(--secondary-font-color);
   margin: 0 1.6rem;
+  opacity: 0;
+  animation: spin0.5s forwards;
+  animation-delay: 1.7s;
 }
 
 .single-animation {
@@ -386,6 +389,7 @@ footer {
   color: #fff;
   font-size: 2rem;
   padding: 2rem;
+  animation: up 2s infinite; /*the bottom arrow has animation now*/
 }
 /* .footer-content {
    overflow: hidden; 
@@ -599,6 +603,16 @@ footer {
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}
+
 @keyframes fadeDown {
   0% {
     transform: translateY(-1rem);
@@ -606,5 +620,18 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
   }
 }
