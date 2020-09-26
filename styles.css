@@ -28,6 +28,7 @@ body {
 }
 section {
   padding: 3.9rem 0;
+  overflow: hidden;
 }
 
 img {
@@ -391,9 +392,9 @@ footer {
   padding: 2rem;
   animation: up 2s infinite; /*the bottom arrow has animation now*/
 }
-/* .footer-content {
-   overflow: hidden; 
-} */
+.footer-content {
+  overflow: hidden;
+}
 
 .footer-content h4 {
   font-size: 1.9rem;
