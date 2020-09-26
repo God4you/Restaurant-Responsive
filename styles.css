@@ -22,6 +22,10 @@ html {
   color: var(--body-font-color);
   scroll-behavior: smooth; /* Sending us back to top */
 }
+
+body {
+  overflow-x: hidden;
+}
 section {
   padding: 3.9rem 0;
 }
@@ -162,6 +166,9 @@ header {
   font-weight: 100;
   line-height: 0.4;
   letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeup 0.5s forwards;
+  animation-delay: 0.5s;
 }
 
 .first-letter {
@@ -177,6 +184,7 @@ header {
   font-weight: 900;
   letter-spacing: 0.5rem;
   margin-right: -0.5;
+  animation: scale 0.5s forwards;
 }
 
 .separator {
@@ -191,6 +199,9 @@ header {
   height: 0.25rem;
   background-color: #fff;
   position: relative;
+  animation: grow 2s forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
 }
 
 .line-right::before,
@@ -200,6 +211,9 @@ header {
   top: 50%;
   transform: translateY(-50%);
   border: 0.6rem solid transparent;
+  opacity: 0;
+  animation: grow 0.5s forwards;
+  animation-delay: 1.2s;
 }
 .line-right::before {
   border-right-color: #fff;
@@ -215,6 +229,12 @@ header {
   font-size: 1.2rem;
   color: var(--secondary-font-color);
   margin: 0 1.6rem;
+}
+
+.single-animation {
+  opacity: 0;
+  animation: fadeDown 0.5s forwards;
+  animation-delay: 1.5s;
 }
 
 .headline-description h5 {
@@ -545,5 +565,46 @@ footer {
 
   .newsletter-btn {
     margin-left: 7.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeup {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
