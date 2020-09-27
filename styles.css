@@ -36,6 +36,13 @@ img {
   max-width: 100%;
 }
 
+.logo {
+  height: auto;
+  width: auto;
+  max-height: 70px;
+  max-width: 86px;
+}
+
 a {
   text-decoration: none;
 }
